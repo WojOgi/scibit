@@ -7,23 +7,20 @@ import MainArea from "./components/layout/mainarea/MainArea.tsx";
 import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
 
 function App() {
-  const listOfCountries = data_CountriesExample.map(
-    (country) => country.countryName,
-  );
+  const listOfCountries = data_CountriesExample
+    .map((country) => country.countryName)
+    .sort((a, b) => a.localeCompare(b));
   // console.log(listOfCountries);
 
-  const selectedCountries: string[] = [];
+  const listOfSelectedCountries: string[] = [];
   //this will later be user-selected
-  selectedCountries.push(listOfCountries[0]);
-  selectedCountries.push(listOfCountries[1]);
-  selectedCountries.push(listOfCountries[2]);
-  selectedCountries.push(listOfCountries[3]);
-  selectedCountries.push(listOfCountries[4]);
+  listOfSelectedCountries.push(listOfCountries[0]);
+  listOfSelectedCountries.push(listOfCountries[1]);
 
-  // console.log("selectedCountries", selectedCountries);
+  // console.log("listOfSelectedCountries", listOfSelectedCountries);
 
   const dataToPlot = data_CountriesExample.filter((country) =>
-    selectedCountries.includes(country.countryName),
+    listOfSelectedCountries.includes(country.countryName),
   );
 
   // console.log("dataToPlot", dataToPlot);
@@ -33,7 +30,10 @@ function App() {
       <Header />
       <MainArea>
         <MyLineChart dataToPlot={dataToPlot} />
-        <ChoiceArea listOfCountries={listOfCountries} />
+        <ChoiceArea
+          listOfCountries={listOfCountries}
+          listOfSelectedCountries={listOfSelectedCountries}
+        />
       </MainArea>
     </>
   );
