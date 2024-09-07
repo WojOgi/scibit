@@ -17,7 +17,7 @@ function App() {
   // console.log(listOfAllCountriesNames);
 
   const [listOfSelectedCountries, setListOfSelectedCountries] = useState([
-    "Belgium",
+    "All Countries",
   ]);
 
   const dataPreparedForPlotting = data_CountriesCopy.map((country) => ({
@@ -41,6 +41,7 @@ function App() {
         <ChoiceArea
           listOfAllCountriesNames={listOfAllCountriesNames}
           listOfSelectedCountries={listOfSelectedCountries}
+          setListOfSelectedCountries={setListOfSelectedCountries}
         />
       </MainArea>
     </>

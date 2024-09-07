@@ -55,6 +55,64 @@ export const totalNrOfPublications = [
 
 export const data_CountriesExample = [
   {
+    countryName: "All Countries",
+    toBePlotted: false,
+    publicationsNumbers: [
+      {
+        year: 2011,
+        publications: 3,
+      },
+      {
+        year: 2012,
+        publications: 13,
+      },
+      {
+        year: 2013,
+        publications: 34,
+      },
+      {
+        year: 2014,
+        publications: 129,
+      },
+      {
+        year: 2015,
+        publications: 213,
+      },
+      {
+        year: 2016,
+        publications: 235,
+      },
+      {
+        year: 2017,
+        publications: 451,
+      },
+      {
+        year: 2018,
+        publications: 943,
+      },
+      {
+        year: 2019,
+        publications: 1408,
+      },
+      {
+        year: 2020,
+        publications: 1470,
+      },
+      {
+        year: 2021,
+        publications: 1579,
+      },
+      {
+        year: 2022,
+        publications: 1913,
+      },
+      {
+        year: 2023,
+        publications: 1955,
+      },
+    ],
+  },
+  {
     countryName: "Belgium",
     toBePlotted: false,
     publicationsNumbers: [
