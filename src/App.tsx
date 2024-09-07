@@ -1,11 +1,15 @@
 import "./styles/App.css";
 import MyLineChart from "./components/graphs/MyLineChart.tsx";
 
-import { data_CountriesExample } from "./sourceData/sourceData.ts";
+import {
+  data_CountriesExample,
+  nrCountriesWithAtLeastOnePublication,
+} from "./sourceData/sourceData.ts";
 import Header from "./components/layout/header/Header.tsx";
 import MainArea from "./components/layout/mainarea/MainArea.tsx";
 import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
 import { useState } from "react";
+import MyBarChart from "./components/graphs/MyBarChart.tsx";
 
 function App() {
   //create a copy of the original data
@@ -37,7 +41,10 @@ function App() {
     <>
       <Header />
       <MainArea>
-        <MyLineChart dataToPlot={dataToPlot} />
+        <div className="graph-container">
+          <MyBarChart dataToPlot={nrCountriesWithAtLeastOnePublication} />
+          <MyLineChart dataToPlot={dataToPlot} />
+        </div>
         <ChoiceArea
           listOfAllCountriesNames={listOfAllCountriesNames}
           listOfSelectedCountries={listOfSelectedCountries}

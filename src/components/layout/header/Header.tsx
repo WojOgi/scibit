@@ -1,8 +1,12 @@
 export default function Header() {
   return (
-    <div>
-      This website shows the number of scientific publications that reference
-      "Bitcoin"
-    </div>
+    <h2
+      style={{
+        display: "flex",
+        justifyContent: "flex-end",
+      }}
+    >
+      Number of scientific articles referencing "Bitcoin" (source Scopus)
+    </h2>
   );
 }

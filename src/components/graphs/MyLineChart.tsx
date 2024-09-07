@@ -45,33 +45,35 @@ export default function MyLineChart({ dataToPlot }: MyLineChartProps) {
   console.log("transformedData", transformedData);
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <LineChart
-        width={500}
-        height={300}
-        data={transformedData}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="year" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        {dataToPlot.map((countryData, index) => (
-          <Line
-            key={countryData.countryName}
-            type="monotone"
-            dataKey={countryData.countryName}
-            stroke={colors[index % colors.length]} // Cycle through colors
-            activeDot={{ r: 8 }}
-          />
-        ))}
-      </LineChart>
-    </ResponsiveContainer>
+    <>
+      <ResponsiveContainer width="100%" height={300}>
+        <LineChart
+          width={500}
+          height={300}
+          data={transformedData}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="year" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          {dataToPlot.map((countryData, index) => (
+            <Line
+              key={countryData.countryName}
+              type="monotone"
+              dataKey={countryData.countryName}
+              stroke={colors[index % colors.length]} // Cycle through colors
+              activeDot={{ r: 8 }}
+            />
+          ))}
+        </LineChart>
+      </ResponsiveContainer>
+    </>
   );
 }

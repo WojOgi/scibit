@@ -10,9 +10,11 @@ export default function SelectedCountryTile({
   setListOfSelectedCountries,
 }: CountryTileProps) {
   function handleClick() {
-    setListOfSelectedCountries(
-      listOfSelectedCountries.filter((country) => country !== countryName),
-    );
+    if (listOfSelectedCountries.length > 1) {
+      setListOfSelectedCountries(
+        listOfSelectedCountries.filter((country) => country !== countryName),
+      );
+    }
   }
 
   return (

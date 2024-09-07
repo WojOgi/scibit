@@ -12,18 +12,24 @@ export default function ChoiceArea({
   listOfSelectedCountries,
   setListOfSelectedCountries,
 }: ChoiceAreaProps) {
+  function handleReset() {
+    setListOfSelectedCountries(["All Countries"]);
+  }
+
   return (
     <div>
+      <SelectedCountries
+        listOfSelectedCountries={listOfSelectedCountries}
+        setListOfSelectedCountries={setListOfSelectedCountries}
+      />
       <AvailableCountries
         listOfSelectedCountries={listOfSelectedCountries}
         listOfAllCountriesNames={listOfAllCountriesNames}
         setListOfSelectedCountries={setListOfSelectedCountries}
       />
-      <SelectedCountries
-        listOfSelectedCountries={listOfSelectedCountries}
-        setListOfSelectedCountries={setListOfSelectedCountries}
-      />
-      <button className="reset-button">Reset</button>
+      <button className="reset-button" onClick={handleReset}>
+        Reset
+      </button>
     </div>
   );
 }

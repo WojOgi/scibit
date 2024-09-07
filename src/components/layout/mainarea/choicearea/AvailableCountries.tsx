@@ -13,7 +13,10 @@ export default function AvailableCountries({
 }: AvailableCountriesProps) {
   return (
     <>
-      <h2>Available Countries</h2>
+      <h3>
+        Available Countries <span>({listOfAllCountriesNames.length})</span>
+        <div className="hint"> Click country name to add to graph </div>
+      </h3>
       <section className="country-tile-container">
         {listOfAllCountriesNames.map((countryName) => (
           <AvailableCountryTile

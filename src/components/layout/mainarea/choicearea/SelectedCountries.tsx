@@ -11,7 +11,10 @@ export default function SelectedCountries({
 }: SelectedCountriesProps) {
   return (
     <>
-      <h2>Selected Countries</h2>
+      <h3>
+        Selected Countries <span>({listOfSelectedCountries.length})</span>
+        <div className="hint"> Click country name to remove from graph </div>
+      </h3>
       <section className="country-tile-container">
         {listOfSelectedCountries.map((countryName) => (
           <SelectedCountryTile
