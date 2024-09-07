@@ -18,6 +18,7 @@ type yearObjType = {
 type MyLineChartProps = {
   dataToPlot: {
     countryName: string;
+    toBePlotted: boolean;
     publicationsNumbers: {
       year: number;
       publications: number;

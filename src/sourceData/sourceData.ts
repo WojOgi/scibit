@@ -56,6 +56,7 @@ export const totalNrOfPublications = [
 export const data_CountriesExample = [
   {
     countryName: "Belgium",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 1 },
       { year: 2012, publications: 0 },
@@ -74,6 +75,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Ireland",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 1 },
       { year: 2012, publications: 0 },
@@ -92,6 +94,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Germany",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
       { year: 2012, publications: 0 },
@@ -110,6 +113,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "UK",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
       { year: 2012, publications: 4 },
@@ -128,6 +132,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "USA",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 2 },
       { year: 2012, publications: 2 },
@@ -146,6 +151,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Canada",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
       { year: 2012, publications: 0 },
@@ -164,6 +170,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Switzerland",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
       { year: 2012, publications: 1 },
@@ -182,6 +189,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "UAE",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
       { year: 2012, publications: 1 },
@@ -200,6 +208,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Italy",
+    toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
       { year: 2012, publications: 0 },

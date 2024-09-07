@@ -3,5 +3,12 @@ type CountryTileProps = {
 };
 
 export default function CountryTile({ countryName }: CountryTileProps) {
-  return <span className="country-tile">{countryName}</span>;
+  return (
+    <span
+      className="country-tile"
+      onClick={() => console.log(`CountryTile: ${countryName}`)}
+    >
+      {countryName}
+    </span>
+  );
 }

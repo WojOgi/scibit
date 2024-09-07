@@ -5,22 +5,30 @@ import { data_CountriesExample } from "./sourceData/sourceData.ts";
 import Header from "./components/layout/header/Header.tsx";
 import MainArea from "./components/layout/mainarea/MainArea.tsx";
 import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
+import { useState } from "react";
 
 function App() {
-  const listOfCountries = data_CountriesExample
+  //create a copy of the original data
+  const data_CountriesCopy = [...data_CountriesExample];
+
+  const listOfAllCountriesNames = data_CountriesCopy
     .map((country) => country.countryName)
     .sort((a, b) => a.localeCompare(b));
-  // console.log(listOfCountries);
+  // console.log(listOfAllCountriesNames);
 
-  const listOfSelectedCountries: string[] = [];
-  //this will later be user-selected
-  listOfSelectedCountries.push(listOfCountries[0]);
-  listOfSelectedCountries.push(listOfCountries[1]);
+  const [listOfSelectedCountries, setListOfSelectedCountries] = useState([
+    "Belgium",
+  ]);
+
+  const dataPreparedForPlotting = data_CountriesCopy.map((country) => ({
+    ...country,
+    toBePlotted: listOfSelectedCountries.includes(country.countryName),
+  }));
 
   // console.log("listOfSelectedCountries", listOfSelectedCountries);
 
-  const dataToPlot = data_CountriesExample.filter((country) =>
-    listOfSelectedCountries.includes(country.countryName),
+  const dataToPlot = dataPreparedForPlotting.filter(
+    (country) => country.toBePlotted,
   );
 
   // console.log("dataToPlot", dataToPlot);
@@ -31,7 +39,7 @@ function App() {
       <MainArea>
         <MyLineChart dataToPlot={dataToPlot} />
         <ChoiceArea
-          listOfCountries={listOfCountries}
+          listOfAllCountriesNames={listOfAllCountriesNames}
           listOfSelectedCountries={listOfSelectedCountries}
         />
       </MainArea>
