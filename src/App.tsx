@@ -36,6 +36,11 @@ function App() {
     (country) => country.toBePlotted,
   );
 
+  const sumOfPopulations = dataToPlot.reduce(
+    (acc, country) => acc + country.population,
+    0,
+  );
+
   // console.log("dataToPlot", dataToPlot);
 
   return (
@@ -47,6 +52,7 @@ function App() {
           <MyLineChart dataToPlot={dataToPlot} />
         </div>
         <ChoiceArea
+          sumOfPopulations={sumOfPopulations}
           data_CountriesCopy={data_CountriesCopy}
           listOfAllCountriesNames={listOfAllCountriesNames}
           listOfSelectedCountries={listOfSelectedCountries}

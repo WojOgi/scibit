@@ -35,7 +35,7 @@ export const colors = [
 
 export type data_CountriesT = {
   countryName: string;
-  population?: number;
+  population: number;
   toBePlotted: boolean;
   publicationsNumbers: { year: number; publications: number }[];
 }[];

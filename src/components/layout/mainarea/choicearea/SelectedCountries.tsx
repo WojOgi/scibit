@@ -1,13 +1,18 @@
 import SelectedCountryTile from "./SelectedCountryTile.tsx";
-import { data_CountriesT } from "../../../../utils/utils.ts";
+import {
+  data_CountriesT,
+  formatNumberCompact,
+} from "../../../../utils/utils.ts";
 
 type SelectedCountriesProps = {
+  sumOfPopulations: number;
   data_CountriesCopy: data_CountriesT;
   listOfSelectedCountries: string[];
   setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
 };
 
 export default function SelectedCountries({
+  sumOfPopulations,
   data_CountriesCopy,
   listOfSelectedCountries,
   setListOfSelectedCountries,
@@ -29,6 +34,7 @@ export default function SelectedCountries({
           />
         ))}
       </section>
+      <div>Combined population: {formatNumberCompact(sumOfPopulations)}</div>
     </>
   );
 }

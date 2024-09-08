@@ -3,6 +3,7 @@ import SelectedCountries from "./SelectedCountries.tsx";
 import { data_CountriesT } from "../../../../utils/utils.ts";
 
 type ChoiceAreaProps = {
+  sumOfPopulations: number;
   data_CountriesCopy: data_CountriesT;
   listOfAllCountriesNames: string[];
   listOfSelectedCountries: string[];
@@ -10,6 +11,7 @@ type ChoiceAreaProps = {
 };
 
 export default function ChoiceArea({
+  sumOfPopulations,
   data_CountriesCopy,
   listOfAllCountriesNames,
   listOfSelectedCountries,
@@ -22,6 +24,7 @@ export default function ChoiceArea({
   return (
     <div>
       <SelectedCountries
+        sumOfPopulations={sumOfPopulations}
         data_CountriesCopy={data_CountriesCopy}
         listOfSelectedCountries={listOfSelectedCountries}
         setListOfSelectedCountries={setListOfSelectedCountries}
