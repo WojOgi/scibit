@@ -1,11 +1,14 @@
 import SelectedCountryTile from "./SelectedCountryTile.tsx";
+import { data_CountriesT } from "../../../../utils/utils.ts";
 
 type SelectedCountriesProps = {
+  data_CountriesCopy: data_CountriesT;
   listOfSelectedCountries: string[];
   setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
 };
 
 export default function SelectedCountries({
+  data_CountriesCopy,
   listOfSelectedCountries,
   setListOfSelectedCountries,
 }: SelectedCountriesProps) {
@@ -22,6 +25,7 @@ export default function SelectedCountries({
             countryName={countryName}
             listOfSelectedCountries={listOfSelectedCountries}
             setListOfSelectedCountries={setListOfSelectedCountries}
+            data_CountriesCopy={data_CountriesCopy}
           />
         ))}
       </section>

@@ -1,12 +1,15 @@
 import AvailableCountryTile from "./AvailableCountryTile.tsx";
+import { data_CountriesT } from "../../../../utils/utils.ts";
 
 type AvailableCountriesProps = {
+  data_CountriesCopy: data_CountriesT;
   listOfSelectedCountries: string[];
   listOfAllCountriesNames: string[];
   setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
 };
 
 export default function AvailableCountries({
+  data_CountriesCopy,
   listOfSelectedCountries,
   listOfAllCountriesNames,
   setListOfSelectedCountries,
@@ -24,6 +27,7 @@ export default function AvailableCountries({
             countryName={countryName}
             listOfSelectedCountries={listOfSelectedCountries}
             setListOfSelectedCountries={setListOfSelectedCountries}
+            data_CountriesCopy={data_CountriesCopy}
           />
         ))}
       </section>

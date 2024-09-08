@@ -10,17 +10,11 @@ import MainArea from "./components/layout/mainarea/MainArea.tsx";
 import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
 import { useState } from "react";
 import MyBarChart from "./components/graphs/MyBarChart.tsx";
-
-type data_Countries = {
-  countryName: string;
-  population?: number;
-  toBePlotted: boolean;
-  publicationsNumbers: { year: number; publications: number }[];
-}[];
+import { data_CountriesT } from "./utils/utils.ts";
 
 function App() {
   //create a copy of the original data
-  const data_CountriesCopy: data_Countries = [...data_CountriesExample];
+  const data_CountriesCopy: data_CountriesT = [...data_CountriesExample];
 
   const listOfAllCountriesNames = data_CountriesCopy
     .map((country) => country.countryName)
@@ -53,6 +47,7 @@ function App() {
           <MyLineChart dataToPlot={dataToPlot} />
         </div>
         <ChoiceArea
+          data_CountriesCopy={data_CountriesCopy}
           listOfAllCountriesNames={listOfAllCountriesNames}
           listOfSelectedCountries={listOfSelectedCountries}
           setListOfSelectedCountries={setListOfSelectedCountries}

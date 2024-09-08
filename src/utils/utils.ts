@@ -32,3 +32,25 @@ export const colors = [
   "#ffeaa7", // Light Yellow
   "#81ecec", // Soft Teal
 ];
+
+export type data_CountriesT = {
+  countryName: string;
+  population?: number;
+  toBePlotted: boolean;
+  publicationsNumbers: { year: number; publications: number }[];
+}[];
+
+export function formatNumberCompact(number: number | undefined): string {
+  if (number === undefined) return "N/A";
+  const absNumber = Math.abs(number);
+
+  if (absNumber < 1000) {
+    return number.toFixed(1);
+  } else if (absNumber < 1000000) {
+    return (absNumber / 1000).toFixed(1) + " k";
+  } else if (absNumber < 1000000000) {
+    return (absNumber / 1000000).toFixed(1) + " mln";
+  } else {
+    return (absNumber / 1000000000).toFixed(1) + " bln";
+  }
+}

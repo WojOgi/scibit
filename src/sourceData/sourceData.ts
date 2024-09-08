@@ -22,6 +22,7 @@ export const nrCountriesWithAtLeastOnePublication = [
 export const data_CountriesExample = [
   {
     countryName: "All Countries",
+    population: 7_900_000_000,
     toBePlotted: false,
     publicationsNumbers: [
       {
@@ -80,6 +81,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Belgium",
+    population: 11600000,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 1 },
@@ -99,6 +101,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Ireland",
+    population: 5127000,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 1 },
@@ -118,6 +121,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Germany",
+    population: 83149300,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -137,6 +141,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "UK",
+    population: 66435600,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -156,6 +161,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "USA",
+    population: 331002651,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 2 },
@@ -175,6 +181,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Canada",
+    population: 37742154,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -194,6 +201,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Switzerland",
+    population: 8654622,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -213,6 +221,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "UAE",
+    population: 9890400,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -232,6 +241,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Italy",
+    population: 60461826,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -251,6 +261,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Australia",
+    population: 25499884,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -270,6 +281,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "China",
+    population: 1439323776,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -289,6 +301,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Czech Republic",
+    population: 10708981,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -308,6 +321,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "India",
+    population: 1380004385,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -327,6 +341,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Israel",
+    population: 8655535,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -346,6 +361,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Sweden",
+    population: 10099265,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -365,6 +381,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "France",
+    population: 65273511,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -384,6 +401,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Hungary",
+    population: 9660351,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -403,6 +421,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Poland",
+    population: 37846611,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -422,6 +441,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Greece",
+    population: 10423054,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -441,6 +461,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Spain",
+    population: 46754778,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -460,6 +481,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Cyprus",
+    population: 1207359,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -479,6 +501,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Hong Kong",
+    population: 7496981,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -498,6 +521,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Slovakia",
+    population: 5459642,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -517,6 +541,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Brazil",
+    population: 212559417,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -536,6 +561,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Estonia",
+    population: 1326535,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -555,6 +581,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Indonesia",
+    population: 273523615,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -574,6 +601,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Japan",
+    population: 126476461,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -593,6 +621,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Luxembourg",
+    population: 625978,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -612,6 +641,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Netherlands",
+    population: 17134872,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -631,6 +661,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Norway",
+    population: 5421241,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -650,6 +681,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Romania",
+    population: 19237691,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -669,6 +701,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Russia",
+    population: 145934462,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -688,6 +721,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "South Korea",
+    population: 51269185,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -707,6 +741,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Ukraine",
+    population: 43733762,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -726,6 +761,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Singapore",
+    population: 5850342,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -745,6 +781,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Denmark",
+    population: 5792202,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -764,6 +801,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Serbia",
+    population: 8737371,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -783,6 +821,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Tunisia",
+    population: 11818619,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -802,6 +841,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Croatia",
+    population: 4105267,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -821,6 +861,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Fiji",
+    population: 896445,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -840,6 +881,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Kazakhstan",
+    population: 18776707,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -859,6 +901,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Lebanon",
+    population: 6825442,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -878,6 +921,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Malaysia",
+    population: 32365999,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -897,6 +941,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "South Africa",
+    population: 59308690,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -916,6 +961,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Thailand",
+    population: 69799978,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -935,6 +981,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Austria",
+    population: 9006398,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -954,6 +1001,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Finland",
+    population: 5540720,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -973,6 +1021,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Colombia",
+    population: 50882891,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -992,6 +1041,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Ecuador",
+    population: 17643054,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1011,6 +1061,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Iceland",
+    population: 341243,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1030,6 +1081,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Iran",
+    population: 83992949,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1049,6 +1101,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Mexico",
+    population: 128932753,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1068,6 +1121,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Morocco",
+    population: 36910560,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1087,6 +1141,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "New Zealand",
+    population: 4822233,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1106,6 +1161,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Nigeria",
+    population: 206139587,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1125,6 +1181,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Saudi Arabia",
+    population: 34813871,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1144,6 +1201,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Taiwan",
+    population: 23816775,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1163,6 +1221,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Turkey",
+    population: 84339067,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1182,6 +1241,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Macao",
+    population: 649335,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1201,6 +1261,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Portugal",
+    population: 10196709,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1220,6 +1281,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Slovenia",
+    population: 2078938,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1239,6 +1301,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Argentina",
+    population: 45195774,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1258,6 +1321,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Egypt",
+    population: 104258327,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1277,6 +1341,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Moldova",
+    population: 4033963,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1296,6 +1361,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "North Macedonia",
+    population: 2083374,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1315,6 +1381,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Peru",
+    population: 32971846,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1334,6 +1401,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Pakistan",
+    population: 220892331,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1353,6 +1421,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Vietnam",
+    population: 97338579,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1372,6 +1441,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Bangladesh",
+    population: 164689383,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1391,6 +1461,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Latvia",
+    population: 1886198,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1410,6 +1481,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Oman",
+    population: 5106626,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1429,6 +1501,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Bahrain",
+    population: 1701583,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1448,6 +1521,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Chile",
+    population: 19116201,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1467,6 +1541,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Kuwait",
+    population: 4270571,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1486,6 +1561,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Kyrgyzstan",
+    population: 6524195,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1505,6 +1581,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Malta",
+    population: 441543,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1524,6 +1601,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Qatar",
+    population: 2881053,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1543,6 +1621,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Albania",
+    population: 2877797,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1562,6 +1641,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Costa Rica",
+    population: 5094118,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1581,6 +1661,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Cuba",
+    population: 11326616,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1600,6 +1681,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Iraq",
+    population: 40222493,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1619,6 +1701,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Jamaica",
+    population: 2961161,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1638,6 +1721,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Montenegro",
+    population: 628062,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1657,6 +1741,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Nepal",
+    population: 29136808,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1676,6 +1761,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Philippines",
+    population: 113263528,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1695,6 +1781,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Sri Lanka",
+    population: 21413249,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1714,6 +1801,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Lithuania",
+    population: 2722289,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1733,6 +1821,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Bulgaria",
+    population: 6948445,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1752,6 +1841,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Jordan",
+    population: 10203134,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1771,6 +1861,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Algeria",
+    population: 43851044,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1790,6 +1881,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Palestine",
+    population: 5101414,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1809,6 +1901,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Afghanistan",
+    population: 38928346,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1828,6 +1921,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Bosnia and Herzegovina",
+    population: 3280819,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1847,6 +1941,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Micronesia",
+    population: 115023,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1866,6 +1961,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Ghana",
+    population: 31072940,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1885,6 +1981,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Guam",
+    population: 168775,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1904,6 +2001,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Uruguay",
+    population: 3473730,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1923,6 +2021,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Uzbekistan",
+    population: 33469203,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1942,6 +2041,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Zambia",
+    population: 18383956,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1961,6 +2061,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Azerbaijan",
+    population: 10139177,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1980,6 +2081,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Cameroon",
+    population: 26545863,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -1999,6 +2101,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Ethiopia",
+    population: 114963588,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2018,6 +2121,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Grenada",
+    population: 112523,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2037,6 +2141,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Myanmar",
+    population: 54409800,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2056,6 +2161,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "North Korea",
+    population: 25778816,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2075,6 +2181,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Trinidad and Tobago",
+    population: 1399488,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2094,6 +2201,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Venezuela",
+    population: 28435943,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2113,6 +2221,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Burkina Faso",
+    population: 20903273,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2132,6 +2241,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Kenya",
+    population: 53771296,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2151,6 +2261,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Libya",
+    population: 6871292,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2170,6 +2281,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Madagascar",
+    population: 27691019,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2189,6 +2301,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Mauritania",
+    population: 4649658,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2208,6 +2321,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Senegal",
+    population: 16743927,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2227,6 +2341,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Sudan",
+    population: 43849260,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2246,6 +2361,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Belarus",
+    population: 9449323,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2265,6 +2381,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Brunei",
+    population: 437483,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2284,6 +2401,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Rwanda",
+    population: 12952218,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2303,6 +2421,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Botswana",
+    population: 2351627,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2322,6 +2441,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "El Salvador",
+    population: 6486205,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2341,6 +2461,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Lichtenstein",
+    population: 38128,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2360,6 +2481,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Tanzania",
+    population: 59734218,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2379,6 +2501,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Mali",
+    population: 20250833,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2398,6 +2521,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Yemen",
+    population: 29825968,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2417,6 +2541,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Bolivia",
+    population: 11673029,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2436,6 +2561,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Cayman Islands",
+    population: 65722,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2455,6 +2581,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Gambia",
+    population: 2416668,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
@@ -2474,6 +2601,7 @@ export const data_CountriesExample = [
   },
   {
     countryName: "Georgia",
+    population: 3989167,
     toBePlotted: false,
     publicationsNumbers: [
       { year: 2011, publications: 0 },
