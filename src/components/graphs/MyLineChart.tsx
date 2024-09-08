@@ -46,7 +46,7 @@ export default function MyLineChart({ dataToPlot }: MyLineChartProps) {
 
   return (
     <>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="90%" height={300}>
         <LineChart
           width={500}
           height={300}

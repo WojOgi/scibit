@@ -11,9 +11,16 @@ import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
 import { useState } from "react";
 import MyBarChart from "./components/graphs/MyBarChart.tsx";
 
+type data_Countries = {
+  countryName: string;
+  population?: number;
+  toBePlotted: boolean;
+  publicationsNumbers: { year: number; publications: number }[];
+}[];
+
 function App() {
   //create a copy of the original data
-  const data_CountriesCopy = [...data_CountriesExample];
+  const data_CountriesCopy: data_Countries = [...data_CountriesExample];
 
   const listOfAllCountriesNames = data_CountriesCopy
     .map((country) => country.countryName)

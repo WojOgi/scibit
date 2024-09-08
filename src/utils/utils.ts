@@ -1,19 +1,19 @@
 export const colors = [
+  "#d81414", // Red
+  "#27ae60", // Emerald
+  "#ff7300", // Orange
   "#8884d8", // Light Purple
   "#1454d8", // Blue
   "#82ca9d", // Green
-  "#ff7300", // Orange
   "#d84d8b", // Pink
   "#54d814", // Bright Green
   "#d8a648", // Gold
   "#4814d8", // Dark Purple
   "#14d8b3", // Teal
-  "#d81414", // Red
   "#14d860", // Mint Green
   "#d8d814", // Yellow
   "#8e44ad", // Purple
   "#2980b9", // Deep Blue
-  "#27ae60", // Emerald
   "#e67e22", // Carrot Orange
   "#e74c3c", // Alizarin Red
   "#f39c12", // Sunflower Yellow

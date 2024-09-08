@@ -6,7 +6,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
@@ -17,7 +16,7 @@ type BarChartProps = {
 export default function MyBarChart({ dataToPlot }: BarChartProps) {
   return (
     <ResponsiveContainer width="45%" height={300}>
-      <h4>Number of countries with at least one publication</h4>
+      <h4>Number of countries with at least one publication in a given year</h4>
       <BarChart
         width={200}
         height={300}
@@ -33,7 +32,6 @@ export default function MyBarChart({ dataToPlot }: BarChartProps) {
         <XAxis dataKey="year" />
         <YAxis />
         <Tooltip />
-        <Legend />
         <Bar
           dataKey="countriesCount"
           fill="#8884d8"
