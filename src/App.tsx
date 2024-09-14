@@ -1,5 +1,6 @@
 import "./styles/App.css";
-import MyLineChart from "./components/graphs/MyLineChart.tsx";
+import MyLineChart_Absolute from "./components/graphs/MyLineChart_Absolute.tsx";
+import MyLineChart_Normalized from "./components/graphs/MyLineChart_Normalized.tsx";
 
 import {
   data_CountriesExample,
@@ -49,7 +50,13 @@ function App() {
       <MainArea>
         <div className="graph-container">
           <MyBarChart dataToPlot={nrCountriesWithAtLeastOnePublication} />
-          <MyLineChart dataToPlot={dataToPlot} />
+
+          <MyLineChart_Normalized dataToPlot={dataToPlot} />
+          <MyLineChart_Absolute dataToPlot={dataToPlot} />
+
+
+
+
         </div>
         <ChoiceArea
           sumOfPopulations={sumOfPopulations}

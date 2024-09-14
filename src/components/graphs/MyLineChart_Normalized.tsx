@@ -18,6 +18,7 @@ type yearObjType = {
 type MyLineChartProps = {
   dataToPlot: {
     countryName: string;
+    population: number;
     toBePlotted: boolean;
     publicationsNumbers: {
       year: number;
@@ -26,7 +27,7 @@ type MyLineChartProps = {
   }[];
 };
 
-export default function MyLineChart({ dataToPlot }: MyLineChartProps) {
+export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
   console.log("dataToPlot", dataToPlot);
 
   const transformedData = dataToPlot[0].publicationsNumbers.map(
@@ -48,7 +49,7 @@ export default function MyLineChart({ dataToPlot }: MyLineChartProps) {
     <>
       <ResponsiveContainer width="90%" height={300}>
         <LineChart
-          width={500}
+          width={400}
           height={300}
           data={transformedData}
           margin={{
@@ -60,7 +61,7 @@ export default function MyLineChart({ dataToPlot }: MyLineChartProps) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis />
+          <YAxis label={{ value: 'Number ', angle: -90, position: 'left' }}/>
           <Tooltip />
           <Legend />
           {dataToPlot.map((countryData, index) => (
