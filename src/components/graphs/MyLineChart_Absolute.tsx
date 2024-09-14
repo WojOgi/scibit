@@ -61,7 +61,7 @@ export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis label={{ value: "Norm. by Pop. (*10^6)", angle: -90, position: 'left' }}/>
+          <YAxis label={{ value: "Normalized by Population (10^6)", angle: -90, position: 'insideBottomLeft' }}/>
           <Tooltip />
           <Legend />
           {dataToPlot.map((countryData, index) => (

@@ -50,13 +50,8 @@ function App() {
       <MainArea>
         <div className="graph-container">
           <MyBarChart dataToPlot={nrCountriesWithAtLeastOnePublication} />
-
           <MyLineChart_Normalized dataToPlot={dataToPlot} />
           <MyLineChart_Absolute dataToPlot={dataToPlot} />
-
-
-
-
         </div>
         <ChoiceArea
           sumOfPopulations={sumOfPopulations}
