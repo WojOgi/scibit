@@ -11,7 +11,7 @@ import MainArea from "./components/layout/mainarea/MainArea.tsx";
 import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
 import { useState } from "react";
 import MyBarChart from "./components/graphs/MyBarChart.tsx";
-import { data_CountriesT } from "./utils/utils.ts";
+import { data_CountriesT, presets } from "./utils/utils.ts";
 
 function App() {
   //create a copy of the original data
@@ -58,6 +58,7 @@ function App() {
           data_CountriesCopy={data_CountriesCopy}
           listOfAllCountriesNames={listOfAllCountriesNames}
           listOfSelectedCountries={listOfSelectedCountries}
+          presets={presets}
           setListOfSelectedCountries={setListOfSelectedCountries}
         />
       </MainArea>

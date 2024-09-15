@@ -33,6 +33,60 @@ export const colors = [
   "#81ecec", // Soft Teal
 ];
 
+export const presets = [
+  {
+    presetName: "Richest countries by total GDP",
+    countryNames: ["USA", "China", "Germany", "Japan", "India"],
+  },
+  {
+    presetName: "Most populous countries",
+    countryNames: ["China", "India", "USA", "Indonesia", "Pakistan"],
+  },
+  {
+    presetName: "Richest middle eastern countries",
+    countryNames: ["Qatar", "UAE", "Kuwait", "Saudi Arabia", "Bahrain"],
+  },
+  {
+    presetName: "Most populous African countries",
+    countryNames: ["Nigeria", "Ethiopia", "Egypt", "Tanzania"],
+  },
+  {
+    presetName: "Most populous European countries",
+    countryNames: ["Germany", "France", "UK", "Italy", "Spain"],
+  },
+  {
+    presetName: "Most populous Asian countries",
+    countryNames: ["China", "India", "Indonesia", "Pakistan", "Bangladesh"],
+  },
+  {
+    presetName: "Most populous American countries",
+    countryNames: ["USA", "Brazil", "Mexico", "Colombia", "Argentina"],
+  },
+  {
+    presetName: "Scandinavian countries",
+    countryNames: ["Sweden", "Norway", "Denmark", "Finland", "Iceland"],
+  },
+  {
+    presetName: "Countries with high inflation",
+    countryNames: ["Venezuela", "Sudan", "Lebanon", "Argentina", "Turkey"],
+  },
+  {
+    presetName: "Countries with high unemployment",
+    countryNames: ["South Africa", "Spain", "Greece", "Italy", "Turkey"],
+  },
+  {
+    presetName: "Countries where Bitcoin is banned or heavily restricted",
+    countryNames: [
+      "Afghanistan",
+      "Algeria",
+      "Bangladesh",
+      "Bolivia",
+      "Pakistan",
+      "Iran",
+    ],
+  },
+];
+
 export type data_CountriesT = {
   countryName: string;
   population: number;
