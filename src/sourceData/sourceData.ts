@@ -21,7 +21,7 @@ export const nrCountriesWithAtLeastOnePublication = [
 
 export const data_CountriesExample = [
   {
-    countryName: "0 All Countries",
+    countryName: "All Countries",
     population: 7_900_000_000,
     toBePlotted: false,
     publicationsNumbers: [

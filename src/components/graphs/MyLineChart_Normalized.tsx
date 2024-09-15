@@ -27,7 +27,9 @@ type MyLineChartProps = {
   }[];
 };
 
-export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
+export default function MyLineChart_Normalized({
+  dataToPlot,
+}: MyLineChartProps) {
   console.log("dataToPlot", dataToPlot);
 
   const transformedData = dataToPlot[0].publicationsNumbers.map(
@@ -36,7 +38,8 @@ export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
 
       dataToPlot.forEach((country) => {
         yearObj[country.countryName] =
-          country.publicationsNumbers[index].publications;
+          (1000000 * country.publicationsNumbers[index].publications) /
+          country.population;
       });
 
       return yearObj;
@@ -61,7 +64,13 @@ export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis label={{ value: 'Number of Publications', angle: -90, position: 'insideBottomLeft' }}/>
+          <YAxis
+            label={{
+              value: "Normalized by Population (10^6)",
+              angle: -90,
+              position: "insideBottomLeft",
+            }}
+          />
           <Tooltip />
           <Legend />
           {dataToPlot.map((countryData, index) => (

@@ -20,6 +20,20 @@ function App() {
   const listOfAllCountriesNames = data_CountriesCopy
     .map((country) => country.countryName)
     .sort((a, b) => a.localeCompare(b));
+
+  const specificElementIndex = listOfAllCountriesNames.indexOf("All Countries");
+
+  if (specificElementIndex !== -1) {
+    // Remove the specific element
+    const specificElement = listOfAllCountriesNames.splice(
+      specificElementIndex,
+      1,
+    )[0];
+
+    // Unshift the specific element back to the beginning
+    listOfAllCountriesNames.unshift(specificElement);
+  }
+
   // console.log(listOfAllCountriesNames);
 
   const [listOfSelectedCountries, setListOfSelectedCountries] = useState([
@@ -50,8 +64,8 @@ function App() {
       <MainArea>
         <div className="graph-container">
           <MyBarChart dataToPlot={nrCountriesWithAtLeastOnePublication} />
-          <MyLineChart_Normalized dataToPlot={dataToPlot} />
           <MyLineChart_Absolute dataToPlot={dataToPlot} />
+          <MyLineChart_Normalized dataToPlot={dataToPlot} />
         </div>
         <ChoiceArea
           sumOfPopulations={sumOfPopulations}

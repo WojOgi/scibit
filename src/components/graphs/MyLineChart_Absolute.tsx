@@ -35,8 +35,8 @@ export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
       const yearObj: yearObjType = { year: pub.year };
 
       dataToPlot.forEach((country) => {
-        yearObj[country.countryName] = 1000000*
-          country.publicationsNumbers[index].publications / country.population;
+        yearObj[country.countryName] =
+          country.publicationsNumbers[index].publications;
       });
 
       return yearObj;
@@ -61,7 +61,13 @@ export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis label={{ value: "Normalized by Population (10^6)", angle: -90, position: 'insideBottomLeft' }}/>
+          <YAxis
+            label={{
+              value: "Number of Publications",
+              angle: -90,
+              position: "insideBottomLeft",
+            }}
+          />
           <Tooltip />
           <Legend />
           {dataToPlot.map((countryData, index) => (

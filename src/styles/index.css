@@ -31,5 +31,9 @@
 
 .graph-container{
     display: flex;
-
 }
+body {
+    background-image: url("bit_background1.png");
+
+    background-size: cover;
+    }
