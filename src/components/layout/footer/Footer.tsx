@@ -1,7 +1,11 @@
 export default function Footer() {
   return (
     <>
-      <div>
+      <div
+        style={{
+          margin: "0.5rem 0",
+        }}
+      >
         <b>Donate (lightning)</b>
       </div>
       <img

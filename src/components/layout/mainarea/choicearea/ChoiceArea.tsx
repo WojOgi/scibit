@@ -17,6 +17,9 @@ export default function ChoiceArea({
 
   return (
     <div>
+      <button className="reset-button" onClick={handleReset}>
+        Reset
+      </button>
       <SelectedCountries
         sumOfPopulations={sumOfPopulations}
         data_CountriesCopy={data_CountriesCopy}
@@ -33,9 +36,6 @@ export default function ChoiceArea({
         listOfAllCountriesNames={listOfAllCountriesNames}
         setListOfSelectedCountries={setListOfSelectedCountries}
       />
-      <button className="reset-button" onClick={handleReset}>
-        Reset
-      </button>
     </div>
   );
 }
