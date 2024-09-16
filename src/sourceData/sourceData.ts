@@ -19,7 +19,7 @@ export const nrCountriesWithAtLeastOnePublication = [
   { year: 2023, countriesCount: 103 },
 ];
 
-export const data_CountriesExample = [
+export const data_CountriesMaster = [
   {
     countryName: "All Countries",
     population: 7_900_000_000,

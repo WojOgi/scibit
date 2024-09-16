@@ -1,8 +1,6 @@
 import SelectedCountryTile from "./SelectedCountryTile.tsx";
-import {
-  data_CountriesT,
-  formatNumberCompact,
-} from "../../../../utils/utils.ts";
+import { formatNumberCompact } from "../../../../utils/utils.ts";
+import { data_CountriesT } from "../../../../types/types.ts";
 
 type SelectedCountriesProps = {
   sumOfPopulations: number;

@@ -8,29 +8,13 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { colors } from "../../utils/utils";
-
-type yearObjType = {
-  year: number;
-  [key: string]: number;
-};
-
-type MyLineChartProps = {
-  dataToPlot: {
-    countryName: string;
-    population: number;
-    toBePlotted: boolean;
-    publicationsNumbers: {
-      year: number;
-      publications: number;
-    }[];
-  }[];
-};
+import { colors } from "../../sourceData/consts.ts";
+import { MyLineChartProps, yearObjType } from "../../types/types.ts";
 
 export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
   console.log("dataToPlot", dataToPlot);
 
-  const transformedData = dataToPlot[0].publicationsNumbers.map(
+  const transformedDataAbsolute = dataToPlot[0].publicationsNumbers.map(
     (pub, index) => {
       const yearObj: yearObjType = { year: pub.year };
 
@@ -43,15 +27,13 @@ export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
     },
   );
 
-  console.log("transformedData", transformedData);
-
   return (
     <>
       <ResponsiveContainer width="90%" height={300}>
         <LineChart
           width={400}
           height={300}
-          data={transformedData}
+          data={transformedDataAbsolute}
           margin={{
             top: 5,
             right: 30,

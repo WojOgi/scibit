@@ -3,7 +3,7 @@ import MyLineChart_Absolute from "./components/graphs/MyLineChart_Absolute.tsx";
 import MyLineChart_Normalized from "./components/graphs/MyLineChart_Normalized.tsx";
 
 import {
-  data_CountriesExample,
+  data_CountriesMaster,
   nrCountriesWithAtLeastOnePublication,
 } from "./sourceData/sourceData.ts";
 import Header from "./components/layout/header/Header.tsx";
@@ -11,52 +11,33 @@ import MainArea from "./components/layout/mainarea/MainArea.tsx";
 import ChoiceArea from "./components/layout/mainarea/choicearea/ChoiceArea.tsx";
 import { useState } from "react";
 import MyBarChart from "./components/graphs/MyBarChart.tsx";
-import { data_CountriesT, presets } from "./utils/utils.ts";
+import {
+  calculateSumOfPopulations,
+  createSortedListOfAllCountriesNames,
+} from "./utils/utils.ts";
+import { presets } from "./sourceData/consts.ts";
+import { data_CountriesT } from "./types/types.ts";
+import Footer from "./components/layout/footer/Footer.tsx";
 
 function App() {
-  //create a copy of the original data
-  const data_CountriesCopy: data_CountriesT = [...data_CountriesExample];
+  //create a copy of the original data to prevent mutation
+  const data_CountriesCopy: data_CountriesT = [...data_CountriesMaster];
 
-  const listOfAllCountriesNames = data_CountriesCopy
-    .map((country) => country.countryName)
-    .sort((a, b) => a.localeCompare(b));
-
-  const specificElementIndex = listOfAllCountriesNames.indexOf("All Countries");
-
-  if (specificElementIndex !== -1) {
-    // Remove the specific element
-    const specificElement = listOfAllCountriesNames.splice(
-      specificElementIndex,
-      1,
-    )[0];
-
-    // Unshift the specific element back to the beginning
-    listOfAllCountriesNames.unshift(specificElement);
-  }
-
-  // console.log(listOfAllCountriesNames);
+  const listOfAllCountriesNames =
+    createSortedListOfAllCountriesNames(data_CountriesCopy);
 
   const [listOfSelectedCountries, setListOfSelectedCountries] = useState([
     "All Countries",
   ]);
 
-  const dataPreparedForPlotting = data_CountriesCopy.map((country) => ({
-    ...country,
-    toBePlotted: listOfSelectedCountries.includes(country.countryName),
-  }));
+  const dataPreparedForPlotting = data_CountriesCopy
+    .map((country) => ({
+      ...country,
+      toBePlotted: listOfSelectedCountries.includes(country.countryName),
+    }))
+    .filter((country) => country.toBePlotted);
 
-  // console.log("listOfSelectedCountries", listOfSelectedCountries);
-
-  const dataToPlot = dataPreparedForPlotting.filter(
-    (country) => country.toBePlotted,
-  );
-
-  const sumOfPopulations = dataToPlot.reduce(
-    (acc, country) => acc + country.population,
-    0,
-  );
-
-  // console.log("dataToPlot", dataToPlot);
+  const sumOfPopulations = calculateSumOfPopulations(dataPreparedForPlotting);
 
   return (
     <>
@@ -64,8 +45,8 @@ function App() {
       <MainArea>
         <div className="graph-container">
           <MyBarChart dataToPlot={nrCountriesWithAtLeastOnePublication} />
-          <MyLineChart_Absolute dataToPlot={dataToPlot} />
-          <MyLineChart_Normalized dataToPlot={dataToPlot} />
+          <MyLineChart_Absolute dataToPlot={dataPreparedForPlotting} />
+          <MyLineChart_Normalized dataToPlot={dataPreparedForPlotting} />
         </div>
         <ChoiceArea
           sumOfPopulations={sumOfPopulations}
@@ -76,6 +57,7 @@ function App() {
           setListOfSelectedCountries={setListOfSelectedCountries}
         />
       </MainArea>
+      <Footer />
     </>
   );
 }

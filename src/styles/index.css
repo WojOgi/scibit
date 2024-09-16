@@ -5,6 +5,7 @@
     background-color: #dce5ff;
     border: 3px solid #1756a8;
     text-align: center;
+    cursor: pointer;
 }
 
 .country-tile-container {
@@ -34,6 +35,5 @@
 }
 body {
     background-image: url("bit_background1.png");
-
     background-size: cover;
-    }
+}

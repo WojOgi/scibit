@@ -1,16 +1,7 @@
 import AvailableCountries from "./AvailableCountries.tsx";
 import SelectedCountries from "./SelectedCountries.tsx";
-import { data_CountriesT } from "../../../../utils/utils.ts";
 import PresetCountries from "./PresetCountries.tsx";
-
-type ChoiceAreaProps = {
-  sumOfPopulations: number;
-  data_CountriesCopy: data_CountriesT;
-  listOfAllCountriesNames: string[];
-  listOfSelectedCountries: string[];
-  presets: { presetName: string; countryNames: string[] }[];
-  setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
-};
+import { ChoiceAreaProps } from "../../../../types/types.ts";
 
 export default function ChoiceArea({
   sumOfPopulations,

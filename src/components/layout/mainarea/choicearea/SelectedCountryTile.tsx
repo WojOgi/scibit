@@ -1,7 +1,5 @@
-import {
-  data_CountriesT,
-  formatNumberCompact,
-} from "../../../../utils/utils.ts";
+import { formatNumberCompact } from "../../../../utils/utils.ts";
+import { data_CountriesT } from "../../../../types/types.ts";
 
 type CountryTileProps = {
   data_CountriesCopy: data_CountriesT;
