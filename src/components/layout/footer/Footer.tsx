@@ -6,7 +6,7 @@ export default function Footer() {
           margin: "0.5rem 0",
         }}
       >
-        <b>Donate (lightning)</b>
+        <b>Buy me a coffee (lightning)</b>
       </div>
       <img
         src="src/assets/lightning_address.png"

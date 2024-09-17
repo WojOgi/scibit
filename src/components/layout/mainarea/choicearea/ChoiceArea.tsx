@@ -1,19 +1,15 @@
 import AvailableCountries from "./AvailableCountries.tsx";
 import SelectedCountries from "./SelectedCountries.tsx";
 import PresetCountries from "./PresetCountries.tsx";
-import { ChoiceAreaProps } from "../../../../types/types.ts";
+import { useCountriesDataContext } from "../../../../utils/utils.ts";
+import { presets } from "../../../../sourceData/consts.ts";
 
-export default function ChoiceArea({
-  sumOfPopulations,
-  data_CountriesCopy,
-  listOfAllCountriesNames,
-  listOfSelectedCountries,
-  presets,
-  setListOfSelectedCountries,
-}: ChoiceAreaProps) {
+export default function ChoiceArea() {
   function handleReset() {
-    setListOfSelectedCountries(["All Countries"]);
+    context.setListOfSelectedCountries(["All Countries"]);
   }
+
+  const context = useCountriesDataContext();
 
   return (
     <div>
@@ -21,20 +17,20 @@ export default function ChoiceArea({
         Reset
       </button>
       <SelectedCountries
-        sumOfPopulations={sumOfPopulations}
-        data_CountriesCopy={data_CountriesCopy}
-        listOfSelectedCountries={listOfSelectedCountries}
-        setListOfSelectedCountries={setListOfSelectedCountries}
+        sumOfPopulations={context.sumOfPopulations}
+        data_CountriesCopy={context.data_CountriesCopy}
+        listOfSelectedCountries={context.listOfSelectedCountries}
+        setListOfSelectedCountries={context.setListOfSelectedCountries}
       />
       <PresetCountries
         presets={presets}
-        setListOfSelectedCountries={setListOfSelectedCountries}
+        setListOfSelectedCountries={context.setListOfSelectedCountries}
       />
       <AvailableCountries
-        data_CountriesCopy={data_CountriesCopy}
-        listOfSelectedCountries={listOfSelectedCountries}
-        listOfAllCountriesNames={listOfAllCountriesNames}
-        setListOfSelectedCountries={setListOfSelectedCountries}
+        data_CountriesCopy={context.data_CountriesCopy}
+        listOfSelectedCountries={context.listOfSelectedCountries}
+        listOfAllCountriesNames={context.listOfAllCountriesNames}
+        setListOfSelectedCountries={context.setListOfSelectedCountries}
       />
     </div>
   );

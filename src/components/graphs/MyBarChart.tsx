@@ -8,12 +8,9 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { nrCountriesWithAtLeastOnePublication } from "../../sourceData/sourceData.ts";
 
-type BarChartProps = {
-  dataToPlot: { year: number; countriesCount: number }[];
-};
-
-export default function MyBarChart({ dataToPlot }: BarChartProps) {
+export default function MyBarChart() {
   return (
     <ResponsiveContainer width="90%" height={300}>
       <>
@@ -23,7 +20,7 @@ export default function MyBarChart({ dataToPlot }: BarChartProps) {
         <BarChart
           width={400}
           height={300}
-          data={dataToPlot}
+          data={nrCountriesWithAtLeastOnePublication}
           margin={{
             top: 5,
             right: 30,

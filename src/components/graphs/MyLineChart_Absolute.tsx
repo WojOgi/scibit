@@ -9,10 +9,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { colors } from "../../sourceData/consts.ts";
-import { MyLineChartProps, yearObjType } from "../../types/types.ts";
+import { yearObjType } from "../../types/types.ts";
+import { useCountriesDataContext } from "../../utils/utils.ts";
 
-export default function MyLineChart_Absolute({ dataToPlot }: MyLineChartProps) {
-  console.log("dataToPlot", dataToPlot);
+export default function MyLineChart_Absolute() {
+  const context = useCountriesDataContext();
+  const dataToPlot = context.dataPreparedForPlotting;
 
   const transformedDataAbsolute = dataToPlot[0].publicationsNumbers.map(
     (pub, index) => {

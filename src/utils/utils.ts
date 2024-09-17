@@ -1,4 +1,18 @@
 import { data_CountriesT } from "../types/types.ts";
+import { useContext } from "react";
+import { CountriesDataContext } from "../context/CountriesDataContextProvider.tsx";
+import { TCountriesDataContext } from "../context/CountriesDataContextProvider.tsx";
+
+export function useCountriesDataContext() {
+  const context: TCountriesDataContext | null =
+    useContext(CountriesDataContext);
+  if (!context) {
+    throw new Error(
+      "useCountriesDataContext must be used within a CountriesDataContextProvider",
+    );
+  }
+  return context;
+}
 
 export function calculateSumOfPopulations(
   dataToPlot: {

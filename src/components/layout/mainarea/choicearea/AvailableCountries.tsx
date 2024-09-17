@@ -1,5 +1,5 @@
 import AvailableCountryTile from "./AvailableCountryTile.tsx";
-import { data_CountriesT } from "../../../../utils/utils.ts";
+import { data_CountriesT } from "../../../../types/types.ts";
 
 type AvailableCountriesProps = {
   data_CountriesCopy: data_CountriesT;
