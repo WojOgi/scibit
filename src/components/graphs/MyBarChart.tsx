@@ -14,7 +14,13 @@ export default function MyBarChart() {
   return (
     <ResponsiveContainer width="90%" height={300}>
       <>
-        <h3>
+        <h3
+          style={{
+            maxWidth: "350px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           Number of countries with at least one publication in a given year
         </h3>
         <BarChart
