@@ -59,6 +59,6 @@ export function formatNumberCompact(number: number | undefined): string {
   } else if (absNumber < 1000000000) {
     return (absNumber / 1000000).toFixed(1) + " mln";
   } else {
-    return (absNumber / 1000000000).toFixed(1) + " bln";
+    return (absNumber / 1000000000).toFixed(2) + " bln";
   }
 }

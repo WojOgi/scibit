@@ -1,38 +1,27 @@
 import SelectedCountryTile from "./SelectedCountryTile.tsx";
-import { formatNumberCompact } from "../../../../utils/utils.ts";
-import { data_CountriesT } from "../../../../types/types.ts";
+import {
+  formatNumberCompact,
+  useCountriesDataContext,
+} from "../../../../utils/utils.ts";
 
-type SelectedCountriesProps = {
-  sumOfPopulations: number;
-  data_CountriesCopy: data_CountriesT;
-  listOfSelectedCountries: string[];
-  setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
-};
+export default function SelectedCountries() {
+  const context = useCountriesDataContext();
 
-export default function SelectedCountries({
-  sumOfPopulations,
-  data_CountriesCopy,
-  listOfSelectedCountries,
-  setListOfSelectedCountries,
-}: SelectedCountriesProps) {
   return (
     <>
       <h3>
-        Selected Countries <span>({listOfSelectedCountries.length})</span>
+        Selected Countries{" "}
+        <span>({context.listOfSelectedCountries.length})</span>
         <div className="hint"> Click country name to remove from graph </div>
       </h3>
       <section className="country-tile-container">
-        {listOfSelectedCountries.map((countryName) => (
-          <SelectedCountryTile
-            key={countryName}
-            countryName={countryName}
-            listOfSelectedCountries={listOfSelectedCountries}
-            setListOfSelectedCountries={setListOfSelectedCountries}
-            data_CountriesCopy={data_CountriesCopy}
-          />
+        {context.listOfSelectedCountries.map((countryName) => (
+          <SelectedCountryTile key={countryName} countryName={countryName} />
         ))}
       </section>
-      <div>Combined population: {formatNumberCompact(sumOfPopulations)}</div>
+      <div>
+        Combined population: {formatNumberCompact(context.sumOfPopulations)}
+      </div>
     </>
   );
 }

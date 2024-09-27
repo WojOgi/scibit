@@ -2,13 +2,9 @@ import PresetTile from "./PresetTile.tsx";
 
 type PresetCountriesProps = {
   presets: { presetName: string; countryNames: string[] }[];
-  setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
 };
 
-export default function PresetCountries({
-  presets,
-  setListOfSelectedCountries,
-}: PresetCountriesProps) {
+export default function PresetCountries({ presets }: PresetCountriesProps) {
   return (
     <>
       <h3>
@@ -20,11 +16,7 @@ export default function PresetCountries({
       </h3>
       <section className={"country-tile-container"}>
         {presets.map((preset) => (
-          <PresetTile
-            presetName={preset.presetName}
-            presets={presets}
-            setListOfSelectedCountries={setListOfSelectedCountries}
-          />
+          <PresetTile presetName={preset.presetName} presets={presets} />
         ))}
       </section>
     </>

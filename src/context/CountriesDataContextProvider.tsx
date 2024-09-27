@@ -25,6 +25,7 @@ export const CountriesDataContext = createContext<TCountriesDataContext | null>(
 export default function CountriesDataContextProvider({
   children,
 }: CountriesDataContextProviderProps) {
+  //here I could probably use useMemo - my data is static and I don't need to recalculate it every time
   const data_CountriesCopy: data_CountriesT = [...data_CountriesMaster];
 
   const listOfAllCountriesNames =
@@ -33,6 +34,8 @@ export default function CountriesDataContextProvider({
   const [listOfSelectedCountries, setListOfSelectedCountries] = useState([
     "All Countries",
   ]);
+
+  console.time("start");
 
   const dataPreparedForPlotting = data_CountriesCopy
     .map((country) => ({

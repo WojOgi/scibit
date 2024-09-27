@@ -1,24 +1,25 @@
-import { formatNumberCompact } from "../../../../utils/utils.ts";
-import { data_CountriesT } from "../../../../types/types.ts";
+import {
+  formatNumberCompact,
+  useCountriesDataContext,
+} from "../../../../utils/utils.ts";
 
 type CountryTileProps = {
-  data_CountriesCopy: data_CountriesT;
-  listOfSelectedCountries: string[];
   countryName: string;
-  setListOfSelectedCountries: (list: string[]) => void;
 };
 
 export default function AvailableCountryTile({
-  data_CountriesCopy,
-  listOfSelectedCountries,
   countryName,
-  setListOfSelectedCountries,
 }: CountryTileProps) {
+  const context = useCountriesDataContext();
+
   function handleClick() {
-    setListOfSelectedCountries([...listOfSelectedCountries, countryName]);
+    context.setListOfSelectedCountries([
+      ...context.listOfSelectedCountries,
+      countryName,
+    ]);
   }
 
-  const population = data_CountriesCopy.find(
+  const population = context.data_CountriesCopy.find(
     (country) => country.countryName === countryName,
   )?.population;
 

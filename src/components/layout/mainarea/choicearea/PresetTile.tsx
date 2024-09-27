@@ -1,18 +1,17 @@
+import { useCountriesDataContext } from "../../../../utils/utils.ts";
+
 type PresetTileProps = {
   presets: { presetName: string; countryNames: string[] }[];
   presetName: string;
-  setListOfSelectedCountries: (listOfSelectedCountries: string[]) => void;
 };
 
-export default function PresetTile({
-  presets,
-  presetName,
-  setListOfSelectedCountries,
-}: PresetTileProps) {
+export default function PresetTile({ presets, presetName }: PresetTileProps) {
+  const context = useCountriesDataContext();
+
   function handleClick() {
     const preset = presets.find((preset) => preset.presetName === presetName);
     if (preset) {
-      setListOfSelectedCountries([...preset.countryNames]);
+      context.setListOfSelectedCountries([...preset.countryNames]);
     }
   }
 

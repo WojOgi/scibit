@@ -35,47 +35,47 @@ export const colors = [
 
 export const presets = [
   {
-    presetName: "Richest countries by total GDP",
+    presetName: "Richest Countries by GDP",
     countryNames: ["USA", "China", "Germany", "Japan", "India"],
   },
   {
-    presetName: "Largest countries",
+    presetName: "Largest Countries",
     countryNames: ["China", "India", "USA", "Indonesia", "Pakistan"],
   },
   {
-    presetName: "Richest middle eastern countries",
+    presetName: "Richest Middle Eastern Countries",
     countryNames: ["Qatar", "UAE", "Kuwait", "Saudi Arabia", "Bahrain"],
   },
   {
-    presetName: "Largest African countries",
+    presetName: "Largest African Countries",
     countryNames: ["Nigeria", "Ethiopia", "Egypt", "Tanzania"],
   },
   {
-    presetName: "Largest European countries",
+    presetName: "Largest European Countries",
     countryNames: ["Germany", "France", "UK", "Italy", "Spain"],
   },
   {
-    presetName: "Largest Asian countries",
+    presetName: "Largest Asian Countries",
     countryNames: ["China", "India", "Indonesia", "Pakistan", "Bangladesh"],
   },
   {
-    presetName: "Largest American countries",
+    presetName: "Largest American Countries",
     countryNames: ["USA", "Brazil", "Mexico", "Colombia", "Argentina"],
   },
   {
-    presetName: "Scandinavian countries",
+    presetName: "Scandinavian Countries",
     countryNames: ["Sweden", "Norway", "Denmark", "Finland", "Iceland"],
   },
   {
-    presetName: "Countries with high inflation",
+    presetName: "Countries with High Inflation",
     countryNames: ["Venezuela", "Sudan", "Lebanon", "Argentina", "Turkey"],
   },
   {
-    presetName: "Countries with high unemployment",
+    presetName: "Countries with High Unemployment",
     countryNames: ["South Africa", "Spain", "Greece", "Italy", "Turkey"],
   },
   {
-    presetName: "Countries where Bitcoin is banned or heavily restricted",
+    presetName: "Countries where Bitcoin is Heavily Restricted",
     countryNames: [
       "Afghanistan",
       "Algeria",

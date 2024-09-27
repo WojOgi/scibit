@@ -16,22 +16,9 @@ export default function ChoiceArea() {
       <button className="reset-button" onClick={handleReset}>
         Reset
       </button>
-      <SelectedCountries
-        sumOfPopulations={context.sumOfPopulations}
-        data_CountriesCopy={context.data_CountriesCopy}
-        listOfSelectedCountries={context.listOfSelectedCountries}
-        setListOfSelectedCountries={context.setListOfSelectedCountries}
-      />
-      <PresetCountries
-        presets={presets}
-        setListOfSelectedCountries={context.setListOfSelectedCountries}
-      />
-      <AvailableCountries
-        data_CountriesCopy={context.data_CountriesCopy}
-        listOfSelectedCountries={context.listOfSelectedCountries}
-        listOfAllCountriesNames={context.listOfAllCountriesNames}
-        setListOfSelectedCountries={context.setListOfSelectedCountries}
-      />
+      <SelectedCountries />
+      <PresetCountries presets={presets} />
+      <AvailableCountries />
     </div>
   );
 }

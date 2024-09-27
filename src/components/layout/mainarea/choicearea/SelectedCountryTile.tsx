@@ -1,28 +1,26 @@
-import { formatNumberCompact } from "../../../../utils/utils.ts";
-import { data_CountriesT } from "../../../../types/types.ts";
+import {
+  formatNumberCompact,
+  useCountriesDataContext,
+} from "../../../../utils/utils.ts";
 
 type CountryTileProps = {
-  data_CountriesCopy: data_CountriesT;
   countryName: string;
-  listOfSelectedCountries: string[];
-  setListOfSelectedCountries: (list: string[]) => void;
 };
 
-export default function SelectedCountryTile({
-  data_CountriesCopy,
-  countryName,
-  listOfSelectedCountries,
-  setListOfSelectedCountries,
-}: CountryTileProps) {
+export default function SelectedCountryTile({ countryName }: CountryTileProps) {
+  const context = useCountriesDataContext();
+
   function handleClick() {
-    if (listOfSelectedCountries.length > 1) {
-      setListOfSelectedCountries(
-        listOfSelectedCountries.filter((country) => country !== countryName),
+    if (context.listOfSelectedCountries.length > 1) {
+      context.setListOfSelectedCountries(
+        context.listOfSelectedCountries.filter(
+          (country) => country !== countryName,
+        ),
       );
     }
   }
 
-  const population = data_CountriesCopy.find(
+  const population = context.data_CountriesCopy.find(
     (country) => country.countryName === countryName,
   )?.population;
 

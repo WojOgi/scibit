@@ -1,3 +1,8 @@
+body {
+    font-family: "Droid Sans Mono", sans-serif;
+    font-size: 15px;
+}
+
 .country-tile {
     flex: 0 0 auto;
     padding: 6px;
