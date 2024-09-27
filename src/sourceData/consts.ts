@@ -35,9 +35,14 @@ export const colors = [
 
 export const presets = [
   {
-    presetName: "Richest Countries by GDP",
+    presetName: "Richest Countries by Total GDP",
     countryNames: ["USA", "China", "Germany", "Japan", "India"],
   },
+  {
+    presetName: "Richest Countries by GDP Per Capita",
+    countryNames: ["Luxembourg", "Singapore", "Ireland", "Norway", "Qatar"],
+  },
+
   {
     presetName: "Largest Countries",
     countryNames: ["China", "India", "USA", "Indonesia", "Pakistan"],
