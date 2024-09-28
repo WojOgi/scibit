@@ -33,41 +33,53 @@ export default function MyLineChart_Normalized() {
   console.log("transformedDataNormalized", transformedDataNormalized);
 
   return (
-    <>
+    <div className={"graph"}>
+      <h3
+        style={{
+          maxWidth: "400px",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        Number of scientific publications mentioning "Bitcoin", normalized by
+        population
+      </h3>
       <ResponsiveContainer width="90%" height={300}>
-        <LineChart
-          width={400}
-          height={300}
-          data={transformedDataNormalized}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="year" />
-          <YAxis
-            label={{
-              value: "Normalized by Population (10^6)",
-              angle: -90,
-              position: "insideBottomLeft",
+        <>
+          <LineChart
+            width={400}
+            height={300}
+            data={transformedDataNormalized}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
             }}
-          />
-          <Tooltip />
-          <Legend />
-          {dataToPlot.map((countryData, index) => (
-            <Line
-              key={countryData.countryName}
-              type="monotone"
-              dataKey={countryData.countryName}
-              stroke={colors[index % colors.length]} // Cycle through colors
-              activeDot={{ r: 8 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="year" />
+            <YAxis
+              label={{
+                value: "Normalized by Population (10^6)",
+                angle: -90,
+                position: "insideBottomLeft",
+              }}
             />
-          ))}
-        </LineChart>
+            <Tooltip />
+            <Legend />
+            {dataToPlot.map((countryData, index) => (
+              <Line
+                key={countryData.countryName}
+                type="monotone"
+                dataKey={countryData.countryName}
+                stroke={colors[index % colors.length]} // Cycle through colors
+                activeDot={{ r: 8 }}
+              />
+            ))}
+          </LineChart>
+        </>
       </ResponsiveContainer>
-    </>
+    </div>
   );
 }

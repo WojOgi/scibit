@@ -12,13 +12,15 @@ export default function ChoiceArea() {
   const context = useCountriesDataContext();
 
   return (
-    <div>
+    <div className="choice-area">
       <button className="reset-button" onClick={handleReset}>
         Reset
       </button>
-      <SelectedCountries />
-      <PresetCountries presets={presets} />
-      <AvailableCountries />
+      <section>
+        <SelectedCountries />
+        <PresetCountries presets={presets} />
+        <AvailableCountries />
+      </section>
     </div>
   );
 }
