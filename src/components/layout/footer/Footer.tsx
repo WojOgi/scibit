@@ -9,7 +9,7 @@ export default function Footer() {
         <b>Buy me a coffee (lightning)</b>
       </div>
       <img
-        src="../../../styles/lightning_address.png"
+        src="src/styles/lightning_address.png"
         style={{
           width: "9%",
           height: "auto",
