@@ -4,8 +4,8 @@ export default function Header() {
       <h1>SciBit - Are Scientists Interested in Bitcoin?</h1>
       <section>
         <p>
-          The graphs below are intended to give a rough impression on how
-          popular Bitcoin-related topics are among scientists working at various
+          The graphs below give a rough impression on how popular
+          Bitcoin-related topics are among scientists working at various
           institutions around the world.
         </p>
         <p>
@@ -21,10 +21,11 @@ export default function Header() {
         style={{
           display: "flex",
           justifyContent: "flex-end",
+          fontSize: "20px",
         }}
       >
-        Number of articles referencing "Bitcoin" (right: normalized by a
-        population)
+        Number of publications referencing "Bitcoin" (left) Normalized by a
+        population (right)
       </h2>
     </>
   );
